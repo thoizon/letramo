@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Letramo – Politique de confidentialité</title>
+<meta name="description" content="Politique de confidentialité du jeu Letramo (Android).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F7F1E4; --paper: #FFFBF3; --ink: #2A2622; --soft: #5E574F; --line: #E4D9C4;
+    --red: #C8492E; --teal: #2E7F75; --brown: #8A5A34; --beige: #EBD9B4; --pink: #C2557F; --slate: #4F5663; --orange: #E9A23B;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.6 "Nunito", system-ui, sans-serif; }
+  header { text-align: center; padding: 40px 16px 8px; }
+  .logo { display: inline-flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .tile { position: relative; width: 52px; height: 64px; border-radius: 12px; color: #FFF8EC;
+          font: 34px/1 "Lilita One", sans-serif; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px;
+          box-shadow: 0 5px 0 rgba(0,0,0,.22); }
+  .tile::before, .tile::after { content: ""; position: absolute; top: 8px; width: 13px; height: 13px; border-radius: 50%;
+          background: radial-gradient(circle at 55% 55%, var(--ink) 0 38%, #fff 40%); }
+  .tile::before { left: 11px; } .tile::after { right: 11px; }
+  .crown { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); width: 40px; height: 22px; }
+  h1 { font: 34px/1.2 "Lilita One", sans-serif; margin: 26px 0 4px; }
+  .sub { color: var(--soft); margin: 0; }
+  nav.langs { display: flex; gap: 8px; justify-content: center; margin: 22px 0 6px; }
+  nav.langs button { font: 16px "Lilita One", sans-serif; border: 2px solid var(--ink); background: var(--paper); color: var(--ink);
+          padding: 6px 16px; border-radius: 10px; cursor: pointer; }
+  nav.langs button[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 48px; }
+  article { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 8px 28px 24px; }
+  article[hidden] { display: none; }
+  h2 { font: 23px/1.3 "Lilita One", sans-serif; margin: 28px 0 6px; color: var(--teal); }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  a { color: var(--red); }
+  .date { color: var(--soft); font-size: 15px; }
+  footer { text-align: center; color: var(--soft); font-size: 14px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { .tile { width: 38px; height: 48px; font-size: 25px; } .tile::before, .tile::after { width: 10px; height: 10px; top: 6px; }
+    .tile::before { left: 7px; } .tile::after { right: 7px; } article { padding: 4px 18px 18px; } h1 { font-size: 28px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" aria-label="Letramo">
+    <span class="tile" style="background:var(--teal)"><svg class="crown" viewBox="0 0 40 22"><path d="M2 21 L0 4 L10 12 L20 0 L30 12 L40 4 L38 21 Z" fill="#F2C140"/><circle cx="11" cy="16" r="2.5" fill="#E0463C"/><circle cx="20" cy="15" r="2.5" fill="#3CAA5A"/><circle cx="29" cy="16" r="2.5" fill="#E0463C"/></svg>L</span>
+    <span class="tile" style="background:var(--brown)">E</span>
+    <span class="tile" style="background:var(--red)">T</span>
+    <span class="tile" style="background:var(--beige);color:#8A1F4A">R</span>
+    <span class="tile" style="background:var(--pink)">A</span>
+    <span class="tile" style="background:var(--slate)">M</span>
+    <span class="tile" style="background:var(--orange);color:var(--ink)">O</span>
+  </div>
+  <h1 id="title">Politique de confidentialité</h1>
+  <p class="sub" id="subtitle">Jeu Letramo pour Android</p>
+  <nav class="langs" aria-label="Langue / Language / Idioma">
+    <button type="button" data-lang="fr" aria-pressed="true">Français</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="es" aria-pressed="false">Español</button>
+  </nav>
+</header>
+
+<main>
+<!-- ================================================================ FRANÇAIS -->
+<article lang="fr" data-lang="fr">
+  <p class="date">Dernière mise à jour : 30 septembre 2026</p>
+  <p>Cette politique explique quelles données sont utilisées par le jeu <strong>Letramo</strong> (identifiant <code>com.thoizon.letramo</code>), édité par Thoizon, et pourquoi.</p>
+
+  <h2>1. Aucune donnée personnelle collectée par nous</h2>
+  <p>Letramo ne demande ni compte, ni nom, ni adresse e-mail, ni numéro de téléphone. Nous ne collectons, ne vendons et ne partageons aucune donnée personnelle, et nous n'utilisons aucun outil de statistiques qui nous serait propre.</p>
+
+  <h2>2. Données enregistrées sur ton appareil</h2>
+  <p>Pour que tu retrouves ta partie, le jeu enregistre <strong>uniquement sur ton téléphone</strong> : ta progression (niveaux, étoiles), tes indices, la langue choisie et quelques réglages. Ces données ne sont jamais envoyées à un serveur. Elles sont supprimées si tu désinstalles le jeu ou effaces ses données.</p>
+
+  <h2>3. Publicités (Google AdMob)</h2>
+  <p>Le jeu peut afficher des publicités, notamment des publicités avec récompense que tu choisis de regarder pour obtenir des indices. Elles sont fournies par <strong>Google AdMob</strong>. Pour afficher et mesurer ces publicités, Google peut collecter des informations sur ton appareil, comme l'identifiant publicitaire, l'adresse IP, le modèle de l'appareil et des données d'interaction avec les publicités.</p>
+  <p>Selon ta région, un message peut te demander ton consentement pour les publicités personnalisées. Tu peux aussi réinitialiser ou supprimer ton identifiant publicitaire dans les paramètres Android (Google &gt; Annonces).</p>
+  <p>En savoir plus : <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">comment Google utilise les données des applications partenaires</a> et <a href="https://policies.google.com/privacy" rel="noopener">règles de confidentialité de Google</a>.</p>
+
+  <h2>4. Achats intégrés (Google Play)</h2>
+  <p>Si tu achètes des indices, le paiement est entièrement géré par <strong>Google Play</strong>. Nous ne recevons jamais tes informations de paiement. Seule la confirmation de l'achat est utilisée par le jeu pour te donner tes indices.</p>
+
+  <h2>5. Enfants</h2>
+  <p>Letramo est un jeu grand public. Nous ne collectons sciemment aucune donnée personnelle d'enfants. Si tu es parent et penses que ton enfant nous a transmis des informations, contacte-nous et nous les supprimerons.</p>
+
+  <h2>6. Sécurité et conservation</h2>
+  <p>Les données du jeu restent sur ton appareil. Les données traitées par Google (publicités, achats) sont soumises aux règles de Google.</p>
+
+  <h2>7. Tes droits</h2>
+  <p>Conformément au RGPD, tu peux demander l'accès, la rectification ou la suppression de tes données. Comme nous ne conservons aucune donnée te concernant, il suffit de désinstaller le jeu pour tout effacer. Pour les données publicitaires, tu peux exercer tes droits directement auprès de Google.</p>
+
+  <h2>8. Modifications</h2>
+  <p>Cette politique peut être mise à jour. La date en haut de la page indique la dernière version.</p>
+
+  <h2>9. Contact</h2>
+  <p>Pour toute question : <a class="mail" href="mailto:ADRESSE@EXEMPLE.COM">ADRESSE@EXEMPLE.COM</a></p>
+</article>
+
+<!-- ================================================================ ENGLISH -->
+<article lang="en" data-lang="en" hidden>
+  <p class="date">Last updated: September 30, 2026</p>
+  <p>This policy explains what data is used by the game <strong>Letramo</strong> (package <code>com.thoizon.letramo</code>), published by Thoizon, and why.</p>
+
+  <h2>1. No personal data collected by us</h2>
+  <p>Letramo does not ask for an account, name, email address or phone number. We do not collect, sell or share any personal data, and we do not use any analytics tools of our own.</p>
+
+  <h2>2. Data stored on your device</h2>
+  <p>So you can pick up where you left off, the game stores <strong>only on your phone</strong>: your progress (levels, stars), your hints, your chosen language and a few settings. This data is never sent to a server. It is deleted if you uninstall the game or clear its data.</p>
+
+  <h2>3. Ads (Google AdMob)</h2>
+  <p>The game may show ads, including rewarded ads that you choose to watch to earn hints. They are provided by <strong>Google AdMob</strong>. To show and measure these ads, Google may collect information about your device, such as the advertising ID, IP address, device model and ad interaction data.</p>
+  <p>Depending on where you live, you may be asked for consent to personalised ads. You can also reset or delete your advertising ID in your Android settings (Google &gt; Ads).</p>
+  <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses data from partner apps</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+
+  <h2>4. In-app purchases (Google Play)</h2>
+  <p>If you buy hints, payment is handled entirely by <strong>Google Play</strong>. We never receive your payment details. The game only uses the purchase confirmation to give you your hints.</p>
+
+  <h2>5. Children</h2>
+  <p>Letramo is a game for a general audience. We do not knowingly collect personal data from children. If you are a parent and believe your child has sent us information, contact us and we will delete it.</p>
+
+  <h2>6. Security and retention</h2>
+  <p>Game data stays on your device. Data processed by Google (ads, purchases) is subject to Google's policies.</p>
+
+  <h2>7. Your rights</h2>
+  <p>Under the GDPR, you may request access to, correction or deletion of your data. Since we keep no data about you, uninstalling the game erases everything. For advertising data, you can exercise your rights directly with Google.</p>
+
+  <h2>8. Changes</h2>
+  <p>This policy may be updated. The date at the top of the page shows the latest version.</p>
+
+  <h2>9. Contact</h2>
+  <p>Any questions: <a class="mail" href="mailto:ADRESSE@EXEMPLE.COM">ADRESSE@EXEMPLE.COM</a></p>
+</article>
+
+<!-- ================================================================ ESPAÑOL -->
+<article lang="es" data-lang="es" hidden>
+  <p class="date">Última actualización: 30 de septiembre de 2026</p>
+  <p>Esta política explica qué datos utiliza el juego <strong>Letramo</strong> (paquete <code>com.thoizon.letramo</code>), publicado por Thoizon, y por qué.</p>
+
+  <h2>1. No recopilamos datos personales</h2>
+  <p>Letramo no pide cuenta, nombre, correo electrónico ni número de teléfono. No recopilamos, vendemos ni compartimos datos personales, y no usamos herramientas de estadísticas propias.</p>
+
+  <h2>2. Datos guardados en tu dispositivo</h2>
+  <p>Para que puedas continuar tu partida, el juego guarda <strong>solo en tu teléfono</strong>: tu progreso (niveles, estrellas), tus pistas, el idioma elegido y algunos ajustes. Estos datos nunca se envían a un servidor. Se borran si desinstalas el juego o eliminas sus datos.</p>
+
+  <h2>3. Anuncios (Google AdMob)</h2>
+  <p>El juego puede mostrar anuncios, en particular anuncios con recompensa que eliges ver para conseguir pistas. Los proporciona <strong>Google AdMob</strong>. Para mostrar y medir estos anuncios, Google puede recopilar información sobre tu dispositivo, como el identificador de publicidad, la dirección IP, el modelo del dispositivo y datos de interacción con los anuncios.</p>
+  <p>Según tu región, se te puede pedir consentimiento para los anuncios personalizados. También puedes restablecer o eliminar tu identificador de publicidad en los ajustes de Android (Google &gt; Anuncios).</p>
+  <p>Más información: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">cómo usa Google los datos de las aplicaciones asociadas</a> y <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>.</p>
+
+  <h2>4. Compras en la aplicación (Google Play)</h2>
+  <p>Si compras pistas, el pago lo gestiona por completo <strong>Google Play</strong>. Nunca recibimos tus datos de pago. El juego solo usa la confirmación de la compra para darte tus pistas.</p>
+
+  <h2>5. Menores</h2>
+  <p>Letramo es un juego para todo el público. No recopilamos a sabiendas datos personales de menores. Si eres padre o madre y crees que tu hijo nos ha enviado información, contáctanos y la eliminaremos.</p>
+
+  <h2>6. Seguridad y conservación</h2>
+  <p>Los datos del juego permanecen en tu dispositivo. Los datos tratados por Google (anuncios, compras) están sujetos a las políticas de Google.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>De acuerdo con el RGPD, puedes solicitar el acceso, la rectificación o la supresión de tus datos. Como no conservamos ningún dato tuyo, basta con desinstalar el juego para borrarlo todo. Para los datos publicitarios, puedes ejercer tus derechos directamente ante Google.</p>
+
+  <h2>8. Cambios</h2>
+  <p>Esta política puede actualizarse. La fecha al principio de la página indica la última versión.</p>
+
+  <h2>9. Contacto</h2>
+  <p>Para cualquier pregunta: <a class="mail" href="mailto:ADRESSE@EXEMPLE.COM">ADRESSE@EXEMPLE.COM</a></p>
+</article>
+</main>
+
+<footer>© 2026 Thoizon. Tous droits réservés.</footer>
+
+<script>
+  // Langue : celle du lien (?lang=en / #es), sinon celle du navigateur, sinon le français
+  const T = {
+    fr: ["Politique de confidentialité", "Jeu Letramo pour Android"],
+    en: ["Privacy Policy", "Letramo game for Android"],
+    es: ["Política de privacidad", "Juego Letramo para Android"]
+  };
+  function show(lang) {
+    if (!T[lang]) lang = "fr";
+    document.querySelectorAll("article").forEach(a => a.hidden = a.dataset.lang !== lang);
+    document.querySelectorAll("nav.langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+    document.documentElement.lang = lang;
+    document.getElementById("title").textContent = T[lang][0];
+    document.getElementById("subtitle").textContent = T[lang][1];
+    document.title = "Letramo – " + T[lang][0];
+  }
+  document.querySelectorAll("nav.langs button").forEach(b => b.addEventListener("click", () => show(b.dataset.lang)));
+  const q = new URLSearchParams(location.search).get("lang") || location.hash.replace("#", "");
+  show(q || (navigator.language || "fr").slice(0, 2).toLowerCase());
+</script>
+</body>
+</html>
